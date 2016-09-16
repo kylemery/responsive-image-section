@@ -35,8 +35,10 @@ h1 {
   padding-left: 1em;
 }
 
-img {
+.img-flex {
   width: 100%;
+  vertical-align: middle;
+  display: block;
 }
 
 p {
@@ -59,6 +61,7 @@ a {
   border-width: 1px;
   border-color: #555;
   border-radius:4px;
+  text-align: center;
 }
 
 a:hover {
@@ -80,18 +83,23 @@ a:hover {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   .text {
     display: inline-block;
     max-width: 49%;
     vertical-align: top;
-    margin: 3em auto;
+    margin: 0.75em auto;
     padding-right: 1em;
   }
 
   footer {
     display: inline-block;
     max-width: 49%;
-    margin: 1em auto;
+    margin: 4.5em auto;
   }
 
   .image {
@@ -105,4 +113,61 @@ a:hover {
 
 }
 
-@media only screen and 
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 2em;
+  }
+
+  .img-flex {
+    padding-right: 1.2em;
+  }
+
+  .text {
+    margin-top: 2.6em;
+    padding-right: 1.5em;
+    padding-left: 1.2em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    margin-bottom: 1.1em;
+  }
+
+  section {
+    max-width: 60em;
+    margin: auto;
+  }
+
+  a {
+    padding: 0.75rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
+  }
+
+  .text {
+    margin-top: 3.5em;
+  }
+
+  section {
+    max-width: 50em;
+  }
+
+}

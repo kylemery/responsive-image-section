@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -13,11 +13,11 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  padding: 0em;
+  padding: 0;
   background-color: #e2e2e2;
 }
 
@@ -27,7 +27,6 @@ body {
 }
 
 h1 {
-  padding-left: 0.5em;
   font-size: 1.5em;
   line-height: 1.4;
 }
@@ -41,11 +40,12 @@ img {
 }
 
 p {
-  margin-top: 0em;
+  margin-top: 0;
+  text-align: left;
 }
 
 h2 {
-  margin-bottom: 0em;
+  margin-bottom: 0;
   font-size: 1em;
 }
 
@@ -59,10 +59,50 @@ a {
   border-width: 1px;
   border-color: #555;
   border-radius:4px;
+}
 
+a:hover {
+  background-color: #000;
 }
 
 .button {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+@media only screen and (min-width: 25em) {
+
+  .button {
+    padding-bottom: 1.5em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .text {
+    display: inline-block;
+    max-width: 49%;
+    vertical-align: top;
+    margin: 3em auto;
+    padding-right: 1em;
+  }
+
+  footer {
+    display: inline-block;
+    max-width: 49%;
+    margin: 1em auto;
+  }
+
+  .image {
+    display: block;
+  }
+
+  body {
+    display: block;
+    margin: auto;
+  }
+
+}
+
+@media only screen and 
